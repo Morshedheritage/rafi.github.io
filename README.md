@@ -1,7 +1,3 @@
-Here is a professional **README.md** file generated based on your CV:
-
----
-
 # Rafi Ahammed Morshed
 
 📍 Dhaka, Bangladesh
