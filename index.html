@@ -1,193 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    
-    <title>Rafi Ahammed Morshed | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="images/hs.jpg" alt="Description of the image" width="300" height="200">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f6f9;
-            color: #333;
-            line-height: 1.6;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name | Academic Website</title>
 
-        header {
-            background: #0a192f;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-        header h1 {
-            margin: 0;
-            font-size: 32px;
-        }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 
-        header p {
-            margin-top: 10px;
-        }
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  background: #ffffff;
+  color: #222;
+  line-height: 1.7;
+}
 
-        .container {
-            width: 85%;
-            margin: auto;
-            padding: 20px 0;
-        }
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+}
 
-        h2 {
-            border-bottom: 2px solid #0a192f;
-            padding-bottom: 5px;
-            margin-top: 40px;
-        }
+header {
+  padding: 50px 0 30px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
 
-        a {
-            color: #0a192f;
-            text-decoration: none;
-        }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        a:hover {
-            text-decoration: underline;
-        }
+nav h1 {
+  font-size: 22px;
+  font-weight: 600;
+}
 
-        .section {
-            margin-bottom: 30px;
-        }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
 
-        .item {
-            margin-bottom: 15px;
-        }
+nav a {
+  text-decoration: none;
+  color: #444;
+  font-weight: 500;
+}
 
-        footer {
-            background: #0a192f;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 40px;
-        }
+nav a:hover {
+  color: #000;
+}
 
-        ul {
-            padding-left: 20px;
-        }
-    </style>
+.hero {
+  padding: 50px 0;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero img {
+  width: 180px;
+  border-radius: 6px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero-text p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+section {
+  padding: 60px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+section h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.publication {
+  margin-bottom: 20px;
+}
+
+.publication strong {
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  padding: 40px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+a {
+  color: #1a73e8;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media(max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>Rafi Ahammed Morshed</h1>
-    <p>
-        Dhaka, Bangladesh <br>
-        📞 +8801979219862 <br>
-        ✉️ <a href="mailto:558@heritagebd.net" style="color:white;">558@heritagebd.net</a><br>
-        <a href="https://scholar.google.com/citations?user=HvKqOsQAAAAJ&hl=en" target="_blank" style="color:white;">Google Scholar</a> |
-        <a href="https://www.linkedin.com/in/rafi-ahammed-morshed-932962256/" target="_blank" style="color:white;">LinkedIn</a> |
-        <a href="https://github.com/morshedrafi9" target="_blank" style="color:white;">GitHub</a>
-    </p>
+<header class="container">
+  <nav>
+    <h1>Your Name</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#teaching">Teaching</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<div class="container">
-
-    <section class="section">
-        <h2>Education</h2>
-        <div class="item">
-            <strong>Heritage School</strong> (Jul 2022 – Jan 2027)<br>
-            International General Certificate of Secondary Education (IGCSE), Edexcel, Pearson, UK<br>
-            Subjects: Bangla, Biology, Chemistry, English Language B, Further Pure Math, Human Biology, Math A, Math B, Physics
-        </div>
-
-        <div class="item">
-            International Advanced Level (IAL), Edexcel, Pearson, UK<br>
-            Subjects: Biology, Chemistry, Mathematics, Physics
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>Research & Publications</h2>
-        <div class="item">
-            <strong>Publication (2025)</strong><br>
-            Epidemiology, genotypic diversity and age-specific risk pattern of circulating human papillomavirus in Dhaka City, Bangladesh: a five-year study (2020–2024).<br>
-            International Journal of Research in Medical Sciences, 13(7), 2781–2787.<br>
-            <a href="https://doi.org/10.18203/2320-6012.ijrms20252012" target="_blank">View Publication (DOI)</a>
-        </div>
-
-        <div class="item">
-            <strong>Conference Presentation (EUROGIN 2026)</strong><br>
-            Poster Presentation at EUROGIN 2026, Vienna, Austria.<br>
-            <a href="https://eurogin.com/" target="_blank">EUROGIN Congress Website</a>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>Research & Work Experience</h2>
-
-        <div class="item">
-            <strong>Research Assistant</strong><br>
-            Human Genetics Research and Training Centre (Jan 2023 – May 2025)<br>
-            <ul>
-                <li>Conducted qPCR-based detection and genotyping of high-risk HPV.</li>
-                <li>Analyzed HPV prevalence and genotype distribution using Python.</li>
-                <li>Visualized 5-year epidemiological dataset (n = 2,049).</li>
-            </ul>
-        </div>
-
-        <div class="item">
-            <strong>Teaching Assistant & Grader – IGCSE Further Pure Mathematics</strong><br>
-            Heritage School (Jan 2025 – Present)<br>
-            <ul>
-                <li>Guided students in solving advanced mathematical problems.</li>
-                <li>Held weekly office hours.</li>
-                <li>Graded assignments and exams with structured feedback.</li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="section">
-        <h2>Professional Development</h2>
-        <ul>
-            <li>
-                <strong>Introduction to Next-Generation Sequencing (DNA)</strong> – Illumina (Jan 2026)<br>
-                Covered NGS workflow, sequencing principles, DNA library preparation.
-            </li>
-            <li>
-                <strong>Programming for Everybody (Getting Started with Python)</strong> – University of Michigan (Coursera)<br>
-                Topics: Python fundamentals, loops, functions, data structures.
-            </li>
-            <li>Training in Genetic Counseling (Feb 2025)</li>
-            <li>Clinical & Molecular Cytogenetics (Karyotyping) (Feb–Mar 2025)</li>
-            <li>Real-Time PCR Training</li>
-            <li>Sanger Sequencing (Dec 2024)</li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Awards & Honors</h2>
-        <ul>
-            <li>National Round Winner – Bangladesh Linguistic Olympiad (2022)</li>
-            <li>National Round Winner – Bangladesh Philosophy Olympiad (2023)</li>
-            <li>Participant – International Philosophy Olympiad 2025, Bari, Italy</li>
-            <li>Edexcel International High Achievers’ Award (2025)</li>
-            <li>The Daily Star Award (2025)</li>
-        </ul>
-    </section>
-
-    <section class="section">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>LaTeX</li>
-            <li>qPCR Data Analysis</li>
-            <li>HPV Genotyping</li>
-        </ul>
-    </section>
-
+<div class="container hero">
+  <img src="profile.jpg" alt="Profile Photo">
+  <div class="hero-text">
+    <h2>Your Full Name, PhD</h2>
+    <p>Assistant Professor / Research Fellow / PhD Candidate</p>
+    <p>Department of XYZ<br>
+    University Name<br>
+    Country</p>
+    <p>
+      Email: your.email@university.edu <br>
+      <a href="#">Google Scholar</a> |
+      <a href="#">ORCID</a> |
+      <a href="#">ResearchGate</a>
+    </p>
+  </div>
 </div>
 
+<section id="about" class="container">
+  <h3>About</h3>
+  <p>
+    I am a researcher specializing in [Your Field]. My work focuses on 
+    [research themes]. I am particularly interested in [specific topics].
+  </p>
+</section>
+
+<section id="research" class="container">
+  <h3>Research Interests</h3>
+  <ul>
+    <li>Topic One</li>
+    <li>Topic Two</li>
+    <li>Topic Three</li>
+    <li>Topic Four</li>
+  </ul>
+</section>
+
+<section id="publications" class="container">
+  <h3>Selected Publications</h3>
+
+  <div class="publication">
+    <strong>Your Name</strong>, Co-author (2026). 
+    Title of the Paper. <em>Journal Name</em>. 
+    <a href="#">[PDF]</a> <a href="#">[DOI]</a>
+  </div>
+
+  <div class="publication">
+    <strong>Your Name</strong>, Co-author (2025). 
+    Title of Another Paper. <em>Conference Name</em>. 
+    <a href="#">[PDF]</a>
+  </div>
+
+</section>
+
+<section id="teaching" class="container">
+  <h3>Teaching</h3>
+  <ul>
+    <li>Course Name – University (Year)</li>
+    <li>Course Name – University (Year)</li>
+  </ul>
+</section>
+
+<section id="contact" class="container">
+  <h3>Contact</h3>
+  <p>
+    Department of XYZ <br>
+    University Name <br>
+    Address Line <br>
+    Country <br><br>
+    Email: your.email@university.edu
+  </p>
+</section>
+
 <footer>
-    © 2026 Rafi Ahammed Morshed | Academic Portfolio
+  © <span id="year"></span> Your Name
 </footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 </body>
 </html>
